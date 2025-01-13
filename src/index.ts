@@ -4,7 +4,7 @@ import { createCommand } from "./commands/create.js";
 import { logger } from "./lib/logger.js";
 
 // Display a beautiful header
-logger.showHeader("React CLI");
+logger.showHeader("React CLI - Michael");
 
 // Define the CLI
 program
