@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "ESNext",  // or "ESNext" if using ESM
+    "moduleResolution": "Node", // Ensure this is set to "Node"
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "baseUrl": "./src", // Base directory for path resolution
+    "paths": {
+      "@/*": ["*"], // Maps @/ to src/
+      "@commands/*": ["commands/*"],
+      "@lib/*": ["lib/*"],
+      "@templates/*": ["templates/*"],
+      "@utils/*": ["utils/*"],
+      "@types/*": ["types/*"],
+      "@constants": ["constants.ts"],
+      "@config": ["config.ts"]
+    },
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
